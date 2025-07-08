@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>DHS Documentation Project Blog</title>
+        <link>https://digital-health-stack.github.io/DHS-Documentation/blog</link>
+        <description>DHS Documentation Project Blog</description>
+        <lastBuildDate>Wed, 30 Apr 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[DHS Project: Launch and Updates]]></title>
+            <link>https://digital-health-stack.github.io/DHS-Documentation/blog/sample-post</link>
+            <guid>https://digital-health-stack.github.io/DHS-Documentation/blog/sample-post</guid>
+            <pubDate>Wed, 30 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to the DHS Project blog! In this post, we cover the key updates about the project, its progress, and how we're moving forward.]]></description>
+            <content:encoded><![CDATA[<p>Welcome to the DHS Project blog! In this post, we cover the key updates about the project, its progress, and how we're moving forward.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="general-updates">General Updates<a href="https://digital-health-stack.github.io/DHS-Documentation/blog/sample-post#general-updates" class="hash-link" aria-label="Direct link to General Updates" title="Direct link to General Updates">​</a></h2>
+<ul>
+<li><strong>Development:</strong> Our team continues to innovate and streamline the documentation and project workflow.</li>
+<li><strong>Integration:</strong> New modules and services are integrated on schedule.</li>
+<li><strong>Community:</strong> We appreciate your feedback, and we've seen an uptick in community participation.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="news-articles">News Articles<a href="https://digital-health-stack.github.io/DHS-Documentation/blog/sample-post#news-articles" class="hash-link" aria-label="Direct link to News Articles" title="Direct link to News Articles">​</a></h2>
+<p>Below are some of the recent news articles featuring the DHS Project. Paste the links and summaries of the articles here:</p>
+<ul>
+<li>
+<p><a href="https://news.example.com/article-one" target="_blank" rel="noopener noreferrer">Article Title One</a><br>
+<em>Summary: Brief summary of what the article covers about the DHS Project...</em></p>
+</li>
+<li>
+<p><a href="https://news.example.com/article-two" target="_blank" rel="noopener noreferrer">Article Title Two</a><br>
+<em>Summary: Brief summary of the news coverage on our recent developments...</em></p>
+</li>
+<li>
+<p><a href="https://digital-health-stack.github.io/DHS-Documentation/blog/sample-post#">Add more links as needed</a></p>
+</li>
+</ul>
+<p>Stay tuned for more updates as we continue to develop and refine the DHS Project.</p>]]></content:encoded>
+            <category>Update</category>
+            <category>Launch</category>
+        </item>
+    </channel>
+</rss>

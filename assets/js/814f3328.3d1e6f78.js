@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdhs_docs=self.webpackChunkdhs_docs||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"DHS Project: Launch and Updates","permalink":"/DHS-Documentation/blog/sample-post","unlisted":false,"date":"2025-04-30T00:00:00.000Z"}]}')}}]);

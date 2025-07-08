@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdhs_docs=self.webpackChunkdhs_docs||[]).push([[903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/DHS-Documentation/blog","blogTitle":"Blog","authorsListPath":"/DHS-Documentation/blog/authors"}')}}]);
