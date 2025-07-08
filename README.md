@@ -74,3 +74,20 @@ GIT_USER=Prashu7487 npm run deploy
 
 # Be ready with the access key for above account (enter when prompted for password)
 ```
+
+## Important:
+
+To push changed in the github:
+
+- you should be a collabo. in the repo
+- modify `docusaurus.config.js` file for your username etc as required
+- then execute the command
+
+```bash
+# GIT_PASS should be valid auth token to your account
+npx cross-env GIT_USER=Prashu7487 GIT_PASS=ghp_abcdefghi docusaurus deploy
+
+# OR
+
+GIT_USER=Prashu7487 GIT_PASS=ghp_abcdefghi npm run deploy
+```

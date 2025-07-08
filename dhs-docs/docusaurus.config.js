@@ -55,10 +55,10 @@ const config = {
   tagline: "Preparing Digital Goods for AI in Healthcare",
   favicon: "img/favicon.svg",
 
-  url: "https://Prashu7487.github.io",
+  url: "https://digital-health-stack.github.io",
   baseUrl: "/DHS-Documentation/", // must match the repo name
 
-  organizationName: "Prashu7487", // GitHub username
+  organizationName: "Digital-Health-Stack", // GitHub username
   projectName: "DHS-Documentation", // GitHub repo name
   deploymentBranch: "gh-pages", // don't change this
 
@@ -78,7 +78,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/Prashu7487/DHS-Documentation/edit/main/",
+          editUrl:
+            "https://github.com/Digital-Health-Stack/DHS-Documentation.git/edit/main/",
           routeBasePath: "/docs",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
@@ -86,7 +87,7 @@ const config = {
         blog: {
           showReadingTime: true,
           editUrl:
-            "https://github.com/Prashu7487/DHS-Documentation/edit/main/blog/",
+            "https://github.com/Digital-Health-Stack/DHS-Documentation.git/edit/main/blog/",
           feedOptions: {
             type: ["rss", "atom"],
             xslt: true,
@@ -121,7 +122,7 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/Prashu7487/DHS-Documentation/",
+            href: "https://github.com/Digital-Health-Stack/DHS-Documentation",
             label: "GitHub",
             position: "right",
           },

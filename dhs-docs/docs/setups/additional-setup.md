@@ -53,7 +53,7 @@ echo "Starting hadoop and spark services"
 
 hadoop/hadoop-3.4.1/sbin/start-all.sh
 
-spark/spark-3.5.5-bin-hadoop3/sbin/start-all.sh
+spark/spark-3.5.6-bin-hadoop3/sbin/start-all.sh
 
 echo "Started hadoop and spark services"
 ```
@@ -87,7 +87,7 @@ echo "Stopping hadoop and spark services"
 
 hadoop/hadoop-3.4.1/sbin/stop-all.sh
 
-spark/spark-3.5.5-bin-hadoop3/sbin/stop-all.sh
+spark/spark-3.5.6-bin-hadoop3/sbin/stop-all.sh
 
 echo "Stopped hadoop and spark services"
 ```
@@ -104,9 +104,13 @@ chmod +x ./stop-services.sh
 ./stop-services.sh
 ```
 
-## 📝 Script to forward ports from instance to localhost
+## 📝 Script to forward useful UI ports from instance to localhost
 
-**Note:** Include frontend/backend ports if needed so
+> **Note:**
+>
+> 1. Either you can forward UI ports to localhost using script below or you can open respective ports in AWS security group to directly access UI by public IP of ec2.
+>
+> 2. Include frontend/backend ports in the script if needed so
 
 ### 1. For Windows
 

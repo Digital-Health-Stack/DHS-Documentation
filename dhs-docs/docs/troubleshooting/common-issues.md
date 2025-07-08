@@ -147,7 +147,7 @@ jps
 
 ## 🧠 Note on SparkSessions
 
-Only one active SparkSession is allowed per JVM. Multiple sessions will conflict and break some parts of DHS.
+Only one active SparkSession is allowed per JVM, so don't create any sparksesion on ec2 other than what framework internally does.
 
 ## Related to Hadoop
 
@@ -160,6 +160,8 @@ If the NameNode is not starting, format the NameNode. Ensure that the NameNode a
 
 Permissions: The Hadoop user must have the necessary permissions to access the directories and connect Spark and all other components. (If only the user has permission to read/write, this can be a verification for the framework that no one else is reading data except the user.)
 
-File Copying: When copying files to HDFS, ensure the exact path is specified. Otherwise, the file might be treated as a directory and may not be visible on the frontend.
+WARNING: Don't do any operation on hdfs file or dir other than from what framework internally does, this may result is meta data mismatch and cause error in future.
 
-WARNING: Don't do any operation of hdfs file or dir other than from what framework internally does, this may result is meta data mismatch and cause error in future.
+## "Queue AM Resource Limit = 0" error
+
+Update your `capacity-schedular.xml` with proper resource percentage for AM, and allocate 100% cluster resources to default queue.

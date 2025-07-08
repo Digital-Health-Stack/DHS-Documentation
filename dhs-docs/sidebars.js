@@ -8,12 +8,12 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Installation",
-      items: ["installation/dependencies"],
+      label: "AWS Setup",
+      items: ["aws-setup/intro", "aws-setup/guide"],
     },
     {
       type: "category",
-      label: "Setups",
+      label: "Hadoop Spark Cluster Setup",
       items: [
         "setups/prerequisites",
         "setups/hadoop",
@@ -21,6 +21,11 @@ const sidebars = {
         "setups/aws",
         "setups/additional-setup",
       ],
+    },
+    {
+      type: "category",
+      label: "Application Installation",
+      items: ["installation/dependencies"],
     },
     {
       type: "category",

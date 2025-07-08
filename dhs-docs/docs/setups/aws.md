@@ -160,7 +160,7 @@ ls $HADOOP_HOME/share/hadoop/common/lib/guava-*.jar
 ls $SPARK_HOME/jars/guava-*.jar
 # both should show: /home/ubuntu/hadoop/hadoop-3.4.1/share/hadoop/common/lib/guava-27.0-jre.jar
 
-ls ~/spark/spark-3.5.5-bin-hadoop3/jars/*bundle*
+ls ~/spark/spark-3.5.6-bin-hadoop3/jars/*bundle*
 # /home/ubuntu/spark/spark-3.5.5-bin-hadoop3/jars/aws-java-sdk-bundle-1.12.262.jar
 # /home/ubuntu/spark/spark-3.5.5-bin-hadoop3/jars/bundle-2.24.6.jar
 

@@ -73,7 +73,7 @@ Compiled by mthakur on 2024-10-09T14:57Z
 Compiled on platform linux-x86_64
 Compiled with protoc 3.23.4
 From source with checksum 7292fe9dba5e2e44e3a9f763fce3e680
-This command was run using /home/prashu/hadoop/hadoop-3.4.1/share/hadoop/common/hadoop-common-3.4.1.jar
+This command was run using /home/cdis/hadoop/hadoop-3.4.1/share/hadoop/common/hadoop-common-3.4.1.jar
 ```
 
 ## 🗂️ Create Directories
@@ -82,7 +82,11 @@ These directories will be used for storing logs, temporary files, and metadata.
 
 ```bash
 mkdir -p $HADOOP_HOME/logs
-mkdir -p ~/hadoop/{tmp,logs,data/{namenode,datanode}}
+mkdir -p ~/hadoop/tmp
+mkdir -p ~/hadoop/logs
+mkdir -p ~/hadoop/data/namenode
+mkdir -p ~/hadoop/data/datanode
+
 ```
 
 ## 🔑 Change the permission of hadoop directory
@@ -160,6 +164,7 @@ nano hdfs-site.xml
 this file contains configuration settings of HDFS daemons (i.e. NameNode, DataNode, Secondary NameNode). It also includes the replication factor and block size of HDFS, again **use your username.**
 
 ```xml
+<configuration>
   <!-- NameNode Directory: User-specific -->
   <property>
     <name>dfs.namenode.name.dir</name>
@@ -221,10 +226,38 @@ this file contains configuration settings of ResourceManager and NodeManager lik
         <name>yarn.nodemanager.aux-services</name>
         <value>mapreduce_shuffle</value>
     </property>
+
     <property>
         <name>yarn.nodemanager.env-whitelist</name>
         <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
     </property>
+
+    <property>
+        <name>yarn.webapp.ui2.enable</name>
+        <value>true</value>
+    </property>
+
+    <property>
+      <name>yarn.resourcemanager.hostname</name>
+      <value>localhost</value>
+    </property>
+
+    <!-- RPC port for the RM (default is 8032) -->
+    <property>
+      <name>yarn.resourcemanager.address</name>
+      <value>localhost:8032</value>
+    </property>
+
+    <property>
+      <name>yarn.nodemanager.pmem-check-enabled</name>
+      <value>false</value>
+    </property>
+
+    <property>
+      <name>yarn.nodemanager.vmem-check-enabled</name>
+      <value>false</value>
+    </property>
+
     <!-- The below setup is for m5.2xlarge, configure based on your system-->
     <!-- Total resources YARN can use, spark-default resources must fit into this -->
     <property>
@@ -339,5 +372,9 @@ tail -f 50 $HADOOP_HOME/logs/hadoop*-secondarynamenode-*.log
 # Check the status of all running YARN applications
 yarn application -list
 ```
+
+## **Important Note**
+
+> **YARN marks a node as unhealthy if its disk usage exceeds 90%. Therefore, ensure that disk usage on each node remains below this threshold. If disk usage goes above 90%, Spark nodes will stop functioning until sufficient space is freed.**
 
 ---

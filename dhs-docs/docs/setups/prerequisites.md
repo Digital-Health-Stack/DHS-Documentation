@@ -1,6 +1,6 @@
 # Prerequisite Guide
 
-> **Note:** This guide works for WSL and Linux based systems.
+> **Note:** This guide is intended for WSL and Linux based systems.
 
 ---
 
